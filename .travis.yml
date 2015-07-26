@@ -2,14 +2,6 @@ language : python
 python:
     - "3.4"
 before_install:
-    - wget http://www.cmake.org/files/v3.3/cmake-3.3.0.tar.gz
-    - tar xzf cmake-3.3.0.tar.gz
-    - cd cmake-3.3.0
-    - sudo ./configure
-    - sudo make
-    - sudo make install
-    - cd ..
-    - sudo rm -r cmake-3.3.0
     - PATH=$PATH:/usr/local/lib
     - sudo git clone https://github.com/lloyd/yajl.git
     - cd yajl
