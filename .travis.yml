@@ -3,13 +3,11 @@ python:
     - "3.4"
 before_install:
     - export LD_LIBRARY_PATH="/usr/local/lib/"
-    - echo $PATH
     - sudo git clone https://github.com/lloyd/yajl.git
     - cd yajl
     - sudo ./configure
     - sudo make install
     - cd ..
-    - sudo chmod 0777 /usr/local/lib/libyajl*
 install:
     - pip install again
     - pip install pytest
