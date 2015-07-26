@@ -11,4 +11,4 @@ before_install:
 install:
     - pip install again
     - pip install pytest
-script: py.test
+script: py.test -v
