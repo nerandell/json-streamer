@@ -9,7 +9,7 @@ before_install:
     - sudo make
     - sudo make install
     - cd ..
-    - rm -r cmake-3.3.0
+    - sudo rm -r cmake-3.3.0
     - PATH=$PATH:/usr/local/lib
     - sudo git clone https://github.com/lloyd/yajl.git
     - cd yajl
