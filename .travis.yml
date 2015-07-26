@@ -5,10 +5,10 @@ before_install:
     - sudo apt-get update
     - sudo apt-get -y install cmake
     - sudo git clone https://github.com/lloyd/yajl.git
-    - sudo cd yajl
+    - cd yajl
     - sudo ./configure
     - sudo make install
-    - sudo cd ..
+    - cd ..
 install:
     - sudo pip install again
     - sudo pip install pytest
