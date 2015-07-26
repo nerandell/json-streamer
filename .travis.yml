@@ -4,6 +4,7 @@ python:
 before_install:
     - PATH=$PATH:/usr/local/lib
     - echo $PATH
+    - chmod -R 0777 /usr/local/lib
     - sudo git clone https://github.com/lloyd/yajl.git
     - cd yajl
     - sudo ./configure
