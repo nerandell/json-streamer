@@ -8,8 +8,8 @@ before_install:
     - sudo ./configure
     - sudo make
     - sudo make install
+    - cd ..
     - PATH=$PATH:/usr/local/lib
-    - echo $PATH
     - sudo git clone https://github.com/lloyd/yajl.git
     - cd yajl
     - sudo ./configure
