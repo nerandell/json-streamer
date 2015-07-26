@@ -2,6 +2,7 @@ language : python
 python:
     - "3.4"
 before_install:
+    - echo $PATH
     - sudo apt-get update
     - sudo apt-get -y install cmake
     - sudo git clone https://github.com/lloyd/yajl.git
