@@ -1,16 +1,15 @@
 language : python
-sudo: required
 python:
     - "3.4"
 before_install:
     - sudo apt-get update
     - sudo apt-get -y install cmake
-    - git clone https://github.com/lloyd/yajl.git
-    - cd yajl
+    - sudo git clone https://github.com/lloyd/yajl.git
+    - sudo cd yajl
     - sudo ./configure
     - sudo make install
-    - cd ..
+    - sudo cd ..
 install:
-    - pip install again
-    - pip install pytest
-script: py.test
+    - sudo pip install again
+    - sudo pip install pytest
+script: sudo py.test
