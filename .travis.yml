@@ -2,11 +2,14 @@ language : python
 python:
     - "3.4"
 before_install:
-    - cmake --version
+    - wget http://files1.directadmin.com/services/custombuild/cmake-2.8.11.tar.gz
+    - tar xzf cmake-2.8.11.tar.gz
+    - cd cmake-2.8.11
+    - sudo ./configure
+    - sudo make
+    - sudo make install
     - PATH=$PATH:/usr/local/lib
     - echo $PATH
-    - sudo apt-get update
-    - sudo apt-get -y install cmake
     - sudo git clone https://github.com/lloyd/yajl.git
     - cd yajl
     - sudo ./configure
