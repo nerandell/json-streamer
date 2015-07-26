@@ -2,9 +2,9 @@ language : python
 python:
     - "3.4"
 before_install:
-    - wget http://files1.directadmin.com/services/custombuild/cmake-2.8.11.tar.gz
-    - tar xzf cmake-2.8.11.tar.gz
-    - cd cmake-2.8.11
+    - wget http://files1.directadmin.com/services/custombuild/cmake-3.3.0.tar.gz
+    - tar xzf cmake-3.3.0.tar.gz
+    - cd cmake-3.3.0
     - sudo ./configure
     - sudo make
     - sudo make install
