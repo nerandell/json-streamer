@@ -10,6 +10,6 @@ before_install:
     - sudo make install
     - cd ..
 install:
-    - sudo pip install -H again
-    - sudo pip install -H pytest
+    - sudo -H pip install again
+    - sudo -H pip install pytest
 script: sudo py.test
