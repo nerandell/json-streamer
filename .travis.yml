@@ -2,7 +2,6 @@ language : python
 python:
     - "3.4"
 before_install:
-    - PATH=$PATH:/usr/local/lib/
     - export LD_LIBRARY_PATH="/usr/local/lib/"
     - echo $PATH
     - sudo git clone https://github.com/lloyd/yajl.git
