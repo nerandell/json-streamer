@@ -2,6 +2,7 @@ language : python
 python:
     - "3.4"
 before_install:
+    - cmake --version
     - PATH=$PATH:/usr/local/lib
     - echo $PATH
     - sudo apt-get update
