@@ -4,12 +4,12 @@ python:
 before_install:
     - PATH=$PATH:/usr/local/lib
     - echo $PATH
-    - chmod 0777 /usr/local/lib/libyajl.so
     - sudo git clone https://github.com/lloyd/yajl.git
     - cd yajl
     - sudo ./configure
     - sudo make install
     - cd ..
+    - chmod 0777 /usr/local/lib/libyajl.so
 install:
     - pip install again
     - pip install pytest
