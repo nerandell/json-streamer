@@ -9,7 +9,7 @@ before_install:
     - sudo ./configure
     - sudo make install
     - cd ..
-    - sudo chmod 0777 /usr/local/lib/libyajl.so
+    - sudo chmod 0777 /usr/local/lib/libyajl*
 install:
     - pip install again
     - pip install pytest
