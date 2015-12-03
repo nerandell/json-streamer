@@ -10,5 +10,6 @@ before_install:
     - cd ..
 install:
     - pip install again
+    - pip install enum34
     - pip install pytest
 script: py.test -v
